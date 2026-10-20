@@ -1,0 +1,57 @@
+BORA.BB BURGUER — SITE HTML COMPLETO + EDITOR DE PRODUTOS
+
+ABRIR O SITE NO COMPUTADOR
+1. Extraia TODO o ZIP em uma pasta.
+2. Abra index.html com duplo clique.
+3. Mantenha a pasta assets ao lado do index.html.
+O catálogo carrega sem servidor, sem fetch e sem banco de dados.
+
+INSTALAR NO CPANEL
+1. Faça backup do site atual.
+2. Envie o ZIP para public_html e extraia.
+3. index.html e assets devem ficar diretamente em public_html.
+4. Se um index.php antigo tiver prioridade, ajuste o arquivo inicial conforme sua hospedagem.
+5. Atualize com Ctrl + F5 depois da troca dos arquivos.
+
+EDITOR DE PRODUTOS EM HTML
+Abra admin.html no seu computador.
+O painel permite:
+- Cadastrar, editar e excluir produtos.
+- Alterar categoria, ingredientes, descrição e selo do card.
+- Configurar tamanhos, preços e valores sob consulta.
+- Enviar ou trocar a foto do produto.
+- Ocultar ou exibir produtos no cardápio.
+- Exportar o catálogo e importar / baixar backups.
+
+COMO PUBLICAR UMA ALTERAÇÃO DO EDITOR
+1. Edite os produtos e clique em Salvar produto.
+2. Clique em Baixar catálogo atualizado.
+3. Será baixado um arquivo chamado catalogo.js. Confira se o navegador não acrescentou (1) ao nome.
+4. Substitua assets/catalogo.js pelo novo arquivo, na pasta local do site ou na hospedagem.
+   No cPanel: normalmente public_html/assets/catalogo.js.
+5. Recarregue com Ctrl + F5. Se usar cache da Cloudflare, limpe o cache desse arquivo.
+As novas fotos são incorporadas ao catálogo exportado. Não é necessário enviar imagens novas separadas.
+As fotos que já acompanham o site continuam na pasta assets/imagens.
+
+IMPORTANTE SOBRE ESTE EDITOR
+É um editor local em HTML e JavaScript, sem login e sem gravação direta no servidor.
+Você pode manter admin.html e assets/admin.js + assets/admin.css apenas no computador.
+Os rascunhos salvos no navegador só são publicados após exportar e substituir catalogo.js.
+Ao reabrir o editor, clique em Restaurar rascunho se quiser continuar as edições salvas.
+Guarde backups JSON para retomar em outro navegador ou computador.
+Um painel com login e salvamento automático no servidor precisa de um backend ou serviço de dados.
+
+WHATSAPP E PEDIDOS
+Ícone vetorial padrão do WhatsApp aplicado em todos os locais.
+Botão do hero: verde com ícone e texto brancos.
+Telefone configurado: (45) 92000-9012, conforme imagem de contato enviada.
+Para mudar: constante PHONE em assets/app.js, formato 55 + DDD + número; atualize também o rodapé de index.html.
+O cliente monta a sacola, gera um resumo numerado e envia a mensagem pelo WhatsApp.
+Disponibilidade, pagamento, prazo e taxa de entrega são confirmados pela equipe.
+Sacola e histórico ficam no navegador do cliente. Não há registro central de pedidos.
+
+CONTEÚDO
+20 produtos; 20 fotos de produtos, além de hero, logo e fachada.
+Fotos dos produtos são ilustrativas.
+O combo 2 pastéis + refrigerante permanece sob consulta porque o valor não está legível na referência.
+Extras de pastéis (+ R$ 3,00), telefone e textos gerais são configurações em assets/app.js e index.html.
